@@ -23,16 +23,16 @@
             <div class="header__menu">
                 <nav>
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/">Category</a></li>
-                        <li><a href="/">About Me</a></li>
+                        <li><a href="/" class="title-20">Home</a></li>
+                        <li><a href="/" class="title-20">Category</a></li>
+                        <li><a href="/" class="title-20">About Me</a></li>
                     </ul>
                 </nav>
-                <button class="header__search">
+                <button class="header__search" type="button">
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.66667 11.3333C6.92394 11.3331 8.14499 10.9122 9.13537 10.1377L12.2492 13.2515L13.2508 12.2499L10.137 9.13608C10.9119 8.1456 11.333 6.92427 11.3333 5.66667C11.3333 2.54221 8.79112 0 5.66667 0C2.54221 0 0 2.54221 0 5.66667C0 8.79112 2.54221 11.3333 5.66667 11.3333ZM5.66667 1.41667C8.01054 1.41667 9.91667 3.32279 9.91667 5.66667C9.91667 8.01054 8.01054 9.91667 5.66667 9.91667C3.32279 9.91667 1.41667 8.01054 1.41667 5.66667C1.41667 3.32279 3.32279 1.41667 5.66667 1.41667Z" fill="#2B2C34" />
                     </svg>
-                    Search
+                    <span class="title-20">Search</span>
                 </button>
                 <a href="/" class="header__buycoffee-btn">
                     <img src="icons/buymeacoffee.svg" alt="coffee cup">
@@ -53,9 +53,9 @@
                         <p>On this blog I share tips and tricks, frameworks, projects, tutorials, etc</p>
                         <p>Make sure you subscribe to get the latest updates</p>
                     </div>
-                    <form class="hero__subscribe">
-                        <label for="email">
-                            <input id="email" name="email" type="text" placeholder="Enter your email here...." required>
+                    <form class="hero__form">
+                        <label for="hero-email">
+                            <input id="hero-email" name="email" type="text" placeholder="Enter your email here...." required>
                         </label>
                         <button type="submit">Subscribe</button>
                     </form>
@@ -66,25 +66,389 @@
             </div>
         </div>
     </section>
-    <section class="categories">
+    <section class="categories" id="categories">
         <div class="container">
-
+            <div class="categories__content">
+                <div class="categories__title">
+                    <h2 class="title-24">Browse the category</h2>
+                    <a href="/" class="title-20">
+                        <span class="title-20">see all category</span>
+                        <svg width="7" height="15" viewBox="0 0 7 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.42694 0.156494C1.56761 0.173496 1.70287 0.223983 1.82343 0.303955C1.94256 0.383035 2.04476 0.489022 2.12518 0.613525L6.22968 6.59888L6.28046 6.67798C6.39149 6.86777 6.45036 7.09115 6.45038 7.3186C6.45038 7.57849 6.3734 7.83303 6.22968 8.03833L6.2287 8.03931L1.97968 14.0256C1.88143 14.1648 1.75447 14.2775 1.60858 14.3518C1.46578 14.4244 1.30917 14.4567 1.15155 14.4475C0.910764 14.448 0.681764 14.3498 0.503113 14.176C0.402713 14.0783 0.320345 13.9597 0.260925 13.8274C0.201563 13.6952 0.166046 13.5508 0.15448 13.4036C0.142959 13.2563 0.156013 13.1078 0.193542 12.9661C0.231052 12.8244 0.291913 12.6915 0.374207 12.5754L0.375183 12.5745L4.12128 7.31177L0.508972 2.04028V2.03931C0.428175 1.92213 0.368065 1.78878 0.332214 1.64673C0.296233 1.50412 0.284677 1.35467 0.298035 1.20728C0.311406 1.06001 0.350176 0.91684 0.411316 0.7854C0.472519 0.653884 0.555496 0.535837 0.65741 0.439697C0.758778 0.336303 0.878471 0.256702 1.00995 0.207275C1.1437 0.15705 1.28613 0.139511 1.42694 0.156494Z" fill="#2B2C34" stroke="#2B2C34" stroke-width="0.3" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="categories__list">
+                    <div class="category">
+                        <div class="category-icon">
+                            <img src="icons/categories/css.svg" alt="css icon">
+                        </div>
+                        <p class="category-name">CSS</p>
+                    </div>
+                    <div class="category">
+                        <div class="category-icon">
+                            <img src="icons/categories/javascript.svg" alt="javascript icon">
+                        </div>
+                        <p class="category-name">javascript</p>
+                    </div>
+                    <div class="category">
+                        <div class="category-icon">
+                            <img src="icons/categories/tailwindcss.svg" alt="tailwind icon">
+                        </div>
+                        <p class="category-name">Tailwind</p>
+                    </div>
+                    <div class="category">
+                        <div class="category-icon">
+                            <img src="icons/categories/vue-js.svg" alt="vue-js icon">
+                        </div>
+                        <p class="category-name">Vue JS</p>
+                    </div>
+                    <div class="category">
+                        <div class="category-icon">
+                            <img src="icons/categories/react.svg" alt="react icon">
+                        </div>
+                        <p class="category-name">React JS</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="articles">
         <div class="container">
-
+            <div class="articles__content">
+                <div class="articles articles__featured">
+                    <div class="articles__featured-title">
+                        <h2 class="title-24">Featured Article</h2>
+                        <a href="/" class="title-20">
+                            <span class="title-20">See All Article</span>
+                            <svg width="7" height="15" viewBox="0 0 7 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.42694 0.156433C1.56761 0.173435 1.70287 0.223922 1.82343 0.303894C1.94256 0.382974 2.04476 0.488961 2.12518 0.613464L6.22968 6.59882L6.28046 6.67792C6.39149 6.86771 6.45036 7.09108 6.45038 7.31854C6.45038 7.57843 6.3734 7.83297 6.22968 8.03827L6.2287 8.03925L1.97968 14.0256C1.88143 14.1647 1.75447 14.2775 1.60858 14.3517C1.46578 14.4244 1.30917 14.4567 1.15155 14.4474C0.910764 14.4479 0.681764 14.3497 0.503113 14.176C0.402713 14.0782 0.320345 13.9596 0.260925 13.8273C0.201563 13.6951 0.166046 13.5508 0.15448 13.4035C0.142959 13.2563 0.156013 13.1077 0.193542 12.966C0.231052 12.8244 0.291913 12.6914 0.374207 12.5754L0.375183 12.5744L4.12128 7.31171L0.508972 2.04022V2.03925C0.428175 1.92207 0.368065 1.78872 0.332214 1.64667C0.296233 1.50406 0.284677 1.35461 0.298035 1.20721C0.311406 1.05995 0.350176 0.916779 0.411316 0.785339C0.472519 0.653823 0.555496 0.535776 0.65741 0.439636C0.758778 0.336242 0.878471 0.256641 1.00995 0.207214C1.1437 0.156989 1.28613 0.13945 1.42694 0.156433Z" fill="#2B2C34" stroke="#2B2C34" stroke-width="0.3" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="articles-list articles__featured-list">
+                        <div class="article">
+                            <img src="image/articles/js_fundamental.png" alt="fundamental of javascript" class="article-image">
+                            <div class="article-info">
+                                <h3 class="title-20 article-title">Fundamental of javascript</h3>
+                                <div class="article-author">
+                                    <img src="image/authors/dasteen.png" alt="author photo">
+                                    <div class="author-data">
+                                        <p>Dasteen</p>
+                                        <p>Jan 10, 2022 ∙ 3 min read</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <img src="image/articles/grid-css.png" alt="grid css" class="article-image">
+                            <div class="article-info">
+                                <h3 class="title-20 article-title">Grid CSS make your life easier</h3>
+                                <div class="article-author">
+                                    <img src="image/authors/dasteen.png" alt="author photo">
+                                    <div class="author-data">
+                                        <p>Dasteen</p>
+                                        <p>Jan 10, 2022 ∙ 3 min read</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <img src="image/articles/light-dark_mode.png" alt="animated light-dark mode" class="article-image">
+                            <div class="article-info">
+                                <h3 class="title-20 article-title">Make animated light mode and dark mode toggle with CSS</h3>
+                                <div class="article-author">
+                                    <img src="image/authors/dasteen.png" alt="author photo">
+                                    <div class="author-data">
+                                        <p>Dasteen</p>
+                                        <p>Jan 10, 2022 ∙ 3 min read</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <img src="image/articles/tic-tac-toe.png" alt="tic tac toe" class="article-image">
+                            <div class="article-info">
+                                <h3 class="title-20 article-title">Make tic tac toe games with react JS</h3>
+                                <div class="article-author">
+                                    <img src="image/authors/dasteen.png" alt="author photo">
+                                    <div class="author-data">
+                                        <p>Dasteen</p>
+                                        <p>Jan 10, 2022 ∙ 3 min read</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="articles articles__css">
+                    <div class="articles__css-title">
+                        <h2 class="title-24">CSS</h2>
+                        <a href="/" class="title-20">
+                            <span class="title-20">See All Article</span>
+                            <svg width="7" height="15" viewBox="0 0 7 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.42694 0.156433C1.56761 0.173435 1.70287 0.223922 1.82343 0.303894C1.94256 0.382974 2.04476 0.488961 2.12518 0.613464L6.22968 6.59882L6.28046 6.67792C6.39149 6.86771 6.45036 7.09108 6.45038 7.31854C6.45038 7.57843 6.3734 7.83297 6.22968 8.03827L6.2287 8.03925L1.97968 14.0256C1.88143 14.1647 1.75447 14.2775 1.60858 14.3517C1.46578 14.4244 1.30917 14.4567 1.15155 14.4474C0.910764 14.4479 0.681764 14.3497 0.503113 14.176C0.402713 14.0782 0.320345 13.9596 0.260925 13.8273C0.201563 13.6951 0.166046 13.5508 0.15448 13.4035C0.142959 13.2563 0.156013 13.1077 0.193542 12.966C0.231052 12.8244 0.291913 12.6914 0.374207 12.5754L0.375183 12.5744L4.12128 7.31171L0.508972 2.04022V2.03925C0.428175 1.92207 0.368065 1.78872 0.332214 1.64667C0.296233 1.50406 0.284677 1.35461 0.298035 1.20721C0.311406 1.05995 0.350176 0.916779 0.411316 0.785339C0.472519 0.653823 0.555496 0.535776 0.65741 0.439636C0.758778 0.336242 0.878471 0.256641 1.00995 0.207214C1.1437 0.156989 1.28613 0.13945 1.42694 0.156433Z" fill="#2B2C34" stroke="#2B2C34" stroke-width="0.3" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="articles-list articles__css-list">
+                        <div class="article">
+                            <img src="image/articles/flexbox-css.png" alt="Flexbox cSS" class="article-image">
+                            <div class="article-info">
+                                <h3 class="title-20 article-title">Flexbox cSS : Everything you need to know</h3>
+                                <div class="article-author">
+                                    <img src="image/authors/dasteen.png" alt="author photo">
+                                    <div class="author-data">
+                                        <p>Dasteen</p>
+                                        <p>Jan 10, 2022 ∙ 3 min read</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <img src="image/articles/grid-css.png" alt="grid css" class="article-image">
+                            <div class="article-info">
+                                <h3 class="title-20 article-title">Grid CSS make your life easier</h3>
+                                <div class="article-author">
+                                    <img src="image/authors/dasteen.png" alt="author photo">
+                                    <div class="author-data">
+                                        <p>Dasteen</p>
+                                        <p>Jan 10, 2022 ∙ 3 min read</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <img src="image/articles/div_center.png" alt="ways center div" class="article-image">
+                            <div class="article-info">
+                                <h3 class="title-20 article-title">3 easy way to make div center</h3>
+                                <div class="article-author">
+                                    <img src="image/authors/dasteen.png" alt="author photo">
+                                    <div class="author-data">
+                                        <p>Dasteen</p>
+                                        <p>Jan 10, 2022 ∙ 3 min read</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <img src="image/articles/light-dark_mode.png" alt="animated light-dark mode" class="article-image">
+                            <div class="article-info">
+                                <h3 class="title-20 article-title">Make animated light mode and dark mode toggle with CSS</h3>
+                                <div class="article-author">
+                                    <img src="image/authors/dasteen.png" alt="author photo">
+                                    <div class="author-data">
+                                        <p>Dasteen</p>
+                                        <p>Jan 10, 2022 ∙ 3 min read</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="articles articles__javascript">
+                    <div class="articles__javascript-title">
+                        <h2 class="title-24">javascript</h2>
+                        <a href="/" class="title-20">
+                            <span class="title-20">See All Article</span>
+                            <svg width="7" height="15" viewBox="0 0 7 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.42694 0.156433C1.56761 0.173435 1.70287 0.223922 1.82343 0.303894C1.94256 0.382974 2.04476 0.488961 2.12518 0.613464L6.22968 6.59882L6.28046 6.67792C6.39149 6.86771 6.45036 7.09108 6.45038 7.31854C6.45038 7.57843 6.3734 7.83297 6.22968 8.03827L6.2287 8.03925L1.97968 14.0256C1.88143 14.1647 1.75447 14.2775 1.60858 14.3517C1.46578 14.4244 1.30917 14.4567 1.15155 14.4474C0.910764 14.4479 0.681764 14.3497 0.503113 14.176C0.402713 14.0782 0.320345 13.9596 0.260925 13.8273C0.201563 13.6951 0.166046 13.5508 0.15448 13.4035C0.142959 13.2563 0.156013 13.1077 0.193542 12.966C0.231052 12.8244 0.291913 12.6914 0.374207 12.5754L0.375183 12.5744L4.12128 7.31171L0.508972 2.04022V2.03925C0.428175 1.92207 0.368065 1.78872 0.332214 1.64667C0.296233 1.50406 0.284677 1.35461 0.298035 1.20721C0.311406 1.05995 0.350176 0.916779 0.411316 0.785339C0.472519 0.653823 0.555496 0.535776 0.65741 0.439636C0.758778 0.336242 0.878471 0.256641 1.00995 0.207214C1.1437 0.156989 1.28613 0.13945 1.42694 0.156433Z" fill="#2B2C34" stroke="#2B2C34" stroke-width="0.3" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="articles-list articles__javascript-list">
+                        <div class="article">
+                            <img src="image/articles/js_array.png" alt="javascript array" class="article-image">
+                            <div class="article-info">
+                                <h3 class="title-20 article-title">array in javasript - Learn JS #3</h3>
+                                <div class="article-author">
+                                    <img src="image/authors/dasteen.png" alt="author photo">
+                                    <div class="author-data">
+                                        <p>Dasteen</p>
+                                        <p>Jan 10, 2022 ∙ 3 min read</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <img src="image/articles/js_fundamental.png" alt="fundamental of javascript" class="article-image">
+                            <div class="article-info">
+                                <h3 class="title-20 article-title">Fundamental of javascript</h3>
+                                <div class="article-author">
+                                    <img src="image/authors/dasteen.png" alt="author photo">
+                                    <div class="author-data">
+                                        <p>Dasteen</p>
+                                        <p>Jan 10, 2022 ∙ 3 min read</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <img src="image/articles/js_portfolio-projects.png" alt="javascript for portfolio" class="article-image">
+                            <div class="article-info">
+                                <h3 class="title-20 article-title">7 project with javascript you must try for your portfolio</h3>
+                                <div class="article-author">
+                                    <img src="image/authors/dasteen.png" alt="author photo">
+                                    <div class="author-data">
+                                        <p>Dasteen</p>
+                                        <p>Jan 10, 2022 ∙ 3 min read</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <img src="image/articles/js_calculator.png" alt="javascript calculator" class="article-image">
+                            <div class="article-info">
+                                <h3 class="title-20 article-title">make simple calculator with javascript</h3>
+                                <div class="article-author">
+                                    <img src="image/authors/dasteen.png" alt="author photo">
+                                    <div class="author-data">
+                                        <p>Dasteen</p>
+                                        <p>Jan 10, 2022 ∙ 3 min read</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="articles articles__react">
+                    <div class="articles__react-title">
+                        <h2 class="title-24">React JS</h2>
+                        <a href="/" class="title-20">
+                            <span class="title-20">See All Article</span>
+                            <svg width="7" height="15" viewBox="0 0 7 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.42694 0.156433C1.56761 0.173435 1.70287 0.223922 1.82343 0.303894C1.94256 0.382974 2.04476 0.488961 2.12518 0.613464L6.22968 6.59882L6.28046 6.67792C6.39149 6.86771 6.45036 7.09108 6.45038 7.31854C6.45038 7.57843 6.3734 7.83297 6.22968 8.03827L6.2287 8.03925L1.97968 14.0256C1.88143 14.1647 1.75447 14.2775 1.60858 14.3517C1.46578 14.4244 1.30917 14.4567 1.15155 14.4474C0.910764 14.4479 0.681764 14.3497 0.503113 14.176C0.402713 14.0782 0.320345 13.9596 0.260925 13.8273C0.201563 13.6951 0.166046 13.5508 0.15448 13.4035C0.142959 13.2563 0.156013 13.1077 0.193542 12.966C0.231052 12.8244 0.291913 12.6914 0.374207 12.5754L0.375183 12.5744L4.12128 7.31171L0.508972 2.04022V2.03925C0.428175 1.92207 0.368065 1.78872 0.332214 1.64667C0.296233 1.50406 0.284677 1.35461 0.298035 1.20721C0.311406 1.05995 0.350176 0.916779 0.411316 0.785339C0.472519 0.653823 0.555496 0.535776 0.65741 0.439636C0.758778 0.336242 0.878471 0.256641 1.00995 0.207214C1.1437 0.156989 1.28613 0.13945 1.42694 0.156433Z" fill="#2B2C34" stroke="#2B2C34" stroke-width="0.3" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="articles-list articles__react-list">
+                        <div class="article">
+                            <img src="image/articles/react_first-month.png" alt="react first month" class="article-image">
+                            <div class="article-info">
+                                <h3 class="title-20 article-title">first month of leaning react jS</h3>
+                                <div class="article-author">
+                                    <img src="image/authors/dasteen.png" alt="author photo">
+                                    <div class="author-data">
+                                        <p>Dasteen</p>
+                                        <p>Jan 10, 2022 ∙ 3 min read</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <img src="image/articles/react_markdown-editor.png" alt="react markdown editor" class="article-image">
+                            <div class="article-info">
+                                <h3 class="title-20 article-title">build markdown editor with react JS</h3>
+                                <div class="article-author">
+                                    <img src="image/authors/dasteen.png" alt="author photo">
+                                    <div class="author-data">
+                                        <p>Dasteen</p>
+                                        <p>Jan 10, 2022 ∙ 3 min read</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <img src="image/articles/react_getting-started.png" alt="getting started with react JS" class="article-image">
+                            <div class="article-info">
+                                <h3 class="title-20 article-title">7 getting started with react JS</h3>
+                                <div class="article-author">
+                                    <img src="image/authors/dasteen.png" alt="author photo">
+                                    <div class="author-data">
+                                        <p>Dasteen</p>
+                                        <p>Jan 10, 2022 ∙ 3 min read</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <img src="image/articles/tic-tac-toe.png" alt="tic tac toe" class="article-image">
+                            <div class="article-info">
+                                <h3 class="title-20 article-title">Make tic tac toe games with react JS</h3>
+                                <div class="article-author">
+                                    <img src="image/authors/dasteen.png" alt="author photo">
+                                    <div class="author-data">
+                                        <p>Dasteen</p>
+                                        <p>Jan 10, 2022 ∙ 3 min read</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button">More Article</button>
+            </div>
         </div>
     </section>
     <section class="subscribe">
         <div class="container">
-
+            <div class="subscribe__content">
+                <div class="subscribe__picture">
+                    <img src="icons/post.png" alt="post box">
+                </div>
+                <h2 class="subscribe__title">Subscribe For the lastest updates</h2>
+                <p class="subscribe__text">Subscribe to newsletter and never miss the new post every week.</p>
+                <form class="subscribe__form">
+                    <label for="subscribe-email">
+                        <input id="subscribe-email" name="email" type="text" placeholder="Enter your email here...." required>
+                    </label>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
         </div>
     </section>
 </main>
 <footer>
     <div class="container">
-
+        <div class="footer__content">
+            <div class="footer__logo-box">
+                <a href="/" class="logo footer__logo">Dasteen<span>.Blog</span></a>
+                <p>Digitaldastin by Dastin Darmawan</p>
+                <div class="footer__socials">
+                    <a href="https://medium.com/" target="_blank"><img src="icons/socials/medium.png" alt="medium"></a>
+                    <a href="https://x.com/?lang=en" target="_blank"><img src="icons/socials/twitter.png" alt="twitter"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="icons/socials/instagram.png" alt="instagram"></a>
+                    <a href="https://ua.linkedin.com/" target="_blank"><img src="icons/socials/linkedin.png" alt="linkedin"></a>
+                </div>
+            </div>
+            <div class="footer__menu-box">
+                <div>
+                    <p>Category</p>
+                    <ul>
+                        <li><a href="#categories">CSS</a></li>
+                        <li><a href="#categories">Javascript</a></li>
+                        <li><a href="#categories">Tailwind</a></li>
+                        <li><a href="#categories">React JS</a></li>
+                        <li><a href="#categories">More Category</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>About Me</p>
+                    <ul>
+                        <li><a href="/about" target="_blank">About Me</a></li>
+                        <li><a href="/projects" target="_blank">Projects</a></li>
+                        <li><a href="/achievement" target="_blank">Achievement</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Get in touch</p>
+                    <ul>
+                        <li><a href="tel:+62-8XXX-XXX-XX">+62-8XXX-XXX-XX</a></li>
+                        <li><a href="mailto:demo@gmail.com">demo@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Follow Us</p>
+                    <ul>
+                        <li><a href="https://medium.com/" target="_blank">Medium</a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                        <li><a href="https://x.com/?lang=en" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzY2MDY5NzIyLCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D&locale=uk_UA" target="_blank">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>© 2025 Digitaldastin</div>
     </div>
 </footer>
 </body>
