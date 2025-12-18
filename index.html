@@ -18,7 +18,28 @@
 <body>
 <header>
     <div class="container">
-
+        <div class="header__content">
+            <a href="/" class="logo header__logo">Dasteen<span>.Blog</span></a>
+            <div class="header__menu">
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/">Category</a></li>
+                        <li><a href="/">About Me</a></li>
+                    </ul>
+                </nav>
+                <button class="header__search">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.66667 11.3333C6.92394 11.3331 8.14499 10.9122 9.13537 10.1377L12.2492 13.2515L13.2508 12.2499L10.137 9.13608C10.9119 8.1456 11.333 6.92427 11.3333 5.66667C11.3333 2.54221 8.79112 0 5.66667 0C2.54221 0 0 2.54221 0 5.66667C0 8.79112 2.54221 11.3333 5.66667 11.3333ZM5.66667 1.41667C8.01054 1.41667 9.91667 3.32279 9.91667 5.66667C9.91667 8.01054 8.01054 9.91667 5.66667 9.91667C3.32279 9.91667 1.41667 8.01054 1.41667 5.66667C1.41667 3.32279 3.32279 1.41667 5.66667 1.41667Z" fill="#2B2C34" />
+                    </svg>
+                    Search
+                </button>
+                <a href="/" class="header__buycoffee-btn">
+                    <img src="icons/buymeacoffee.svg" alt="coffee cup">
+                    Buy Me A Coffee
+                </a>
+            </div>
+        </div>
     </div>
 </header>
 <main>
@@ -26,13 +47,17 @@
         <div class="container">
             <div class="hero__content">
                 <div class="hero__info">
-                    <h1 class="hero__title"></h1>
-                    <p class="hero__text"></p>
+                    <h1 class="hero__title">Hi, i’m Dasteen
+                        Front end dev</h1>
+                    <div class="hero__text">
+                        <p>On this blog I share tips and tricks, frameworks, projects, tutorials, etc</p>
+                        <p>Make sure you subscribe to get the latest updates</p>
+                    </div>
                     <form class="hero__subscribe">
                         <label for="email">
-                            <input id="email" type="text">
+                            <input id="email" name="email" type="text" placeholder="Enter your email here...." required>
                         </label>
-                        <button type="submit"></button>
+                        <button type="submit">Subscribe</button>
                     </form>
                 </div>
                 <div class="hero__image">
