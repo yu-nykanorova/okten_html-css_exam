@@ -1,0 +1,136 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 95px;
+}
+
+.title-24 {
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+.title-20 {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 36px;
+    color: #001858;
+}
+
+.logo span {
+    font-weight: 700;
+    font-size: 18px;
+    color: #6246ea;
+}
+
+header {
+    width: 100%;
+    background-color: #eff0f3;
+    box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
+    position: fixed;
+}
+
+.header__content {
+    width: 100%;
+    padding: 22px 0 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu,
+.header__menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.header__menu a {
+    color: #2b2c34;
+}
+
+.header__search,
+.header__buycoffee-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__search span {
+    color: #2b2c34;
+}
+
+.header__buycoffee-btn {
+    padding: 10px 17px;
+    border-radius: 4px;
+    background-color: #6246ea;
+
+}
+
+.header__buycoffee-btn span {
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #fffffe;
+}
+
+.hero {
+    width: 100%;
+    background-color: #EFF0F3;
+}
+
+.hero__content {
+    width: 100%;
+    padding: 271px 0 263px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__info {
+    max-width: 664px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero__title {
+    max-width: 617px;
+    font-weight: 700;
+    font-size: 64px;
+    text-transform: capitalize;
+    color: #2b2c34;
+}
+
+.hero__text {
+    font-weight: 400;
+    font-size: 20px;
+    color: #9a9494;
+    position: relative;
+}
+
+.hero__text p {
+    margin-left: 12px;
+}
+
+.hero__text::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 3px;
+    height: 56px;
+    left: 0;
+    top: 0;
+    background-color: #2b2c34;
+}
