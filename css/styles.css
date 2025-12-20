@@ -133,9 +133,9 @@ header {
     content: "";
     display: block;
     width: 3px;
-    height: 56px;
+    height: 100%;
     left: 0;
-    top: -3px;
+    top: 0;
     background-color: #2b2c34;
 }
 
@@ -308,7 +308,6 @@ header {
 }
 
 .articles-list {
-    height: 425px;
     display: flex;
     justify-content: space-between;
     gap: 16px;
@@ -316,6 +315,7 @@ header {
 
 article {
     width: calc((100% - 16px * 3) / 4);
+    height: 425px;
 }
 
 .article {
@@ -363,6 +363,7 @@ article {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 13px;
 }
 
 .author-data div p {
@@ -459,7 +460,7 @@ footer {
     padding: 70px 0 50px 0;
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    gap: 20px;
 }
 
 .footer__logo-box {
