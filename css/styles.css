@@ -76,7 +76,11 @@ header {
     padding: 10px 17px;
     border-radius: 4px;
     background-color: #6246ea;
+    transition: all 0.2s ease-in-out;
+}
 
+.header__buycoffee-btn:hover {
+    transform: scale(1.02);
 }
 
 .header__buycoffee-btn span {
@@ -166,6 +170,11 @@ header {
     font-size: 20px;
     text-transform: capitalize;
     color: #fffffe;
+    transition: all 0.2s ease-in-out;
+}
+
+.hero__form button:hover {
+    transform: scale(1.02);
 }
 
 .hero__image {
@@ -197,6 +206,7 @@ header {
     align-items: center;
     justify-content: center;
     gap: 12px;
+    position: relative;
 }
 
 .categories__title svg,
@@ -206,6 +216,25 @@ header {
 
 .categories__title a span {
     color: #2b2c34;
+}
+
+.categories__title a::after,
+.articles-title a::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #2b2c34;
+    bottom: 0;
+    left: 0;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.categories__title a:hover::after,
+.articles-title a:hover::after {
+    transform: scale(1);
 }
 
 .categories__list {
@@ -328,10 +357,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.author-data div p {
     font-weight: 400;
     font-size: 14px;
     color: #2b2c34;
     text-transform: capitalize;
+}
+
+.author-data div span {
+    transform: translateY(-2px);
+    font-size: 12px;
 }
 
 .articles__content button {
@@ -344,6 +381,11 @@ header {
     font-size: 20px;
     text-transform: capitalize;
     color: #fffffe;
+    transition: all 0.2s ease-in-out;
+}
+
+.articles__content button:hover {
+    transform: scale(1.02);
 }
 
 .subscribe {
@@ -395,6 +437,11 @@ header {
     font-size: 20px;
     text-transform: capitalize;
     color: #fffffe;
+    transition: all 0.2s ease-in-out;
+}
+
+.subscribe__form button:hover {
+    transform: scale(1.02);
 }
 
 footer {
@@ -406,6 +453,7 @@ footer {
     padding: 70px 0 50px 0;
     display: flex;
     justify-content: space-between;
+    gap: 50px;
 }
 
 .footer__logo-box {
@@ -426,8 +474,12 @@ footer {
     gap: 30px;
 }
 
-.footer__socials img {
-    max-height: 30px;
+.footer__socials a:first-child:hover svg {
+    fill: #6246ea;
+}
+
+.footer__socials a:not(:first-child):hover svg path {
+    stroke: #6246ea;
 }
 
 .footer__menu-box {
