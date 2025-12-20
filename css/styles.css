@@ -152,6 +152,7 @@ header {
     padding: 21px 25px;
     border-radius: 8px;
     background-color: #fffffe;
+    font-size: 20px;
     color: #2b2c34;
 }
 
@@ -226,7 +227,7 @@ header {
     width: 100%;
     height: 1px;
     background-color: #2b2c34;
-    bottom: 0;
+    bottom: -2px;
     left: 0;
     transform: scale(0);
     transition: transform 0.2s ease-in-out;
@@ -313,8 +314,13 @@ header {
     gap: 16px;
 }
 
-.article {
+article {
     width: calc((100% - 16px * 3) / 4);
+}
+
+.article {
+    width: 100%;
+    height: 100%;
     padding: 20px;
     display: grid;
     grid-template-rows: 198px 1fr;
