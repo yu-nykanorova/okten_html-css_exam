@@ -424,9 +424,9 @@ article {
 }
 
 .articles__content button {
-    max-width: 165px;
+    width: 165px;
     margin-inline: auto;
-    padding: 19px 23px;
+    padding: 19px 21px;
     border-radius: 8px;
     background-color: #6246ea;
     font-weight: 700;
