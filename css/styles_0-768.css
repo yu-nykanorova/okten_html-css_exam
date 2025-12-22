@@ -3,6 +3,16 @@
         padding: 0 20px;
     }
 
+    .title-24 {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .title-20 {
+        font-weight: 600;
+        font-size: 16px;
+    }
+
     .logo {
         font-weight: 500;
         font-size: 26px;
@@ -50,5 +60,118 @@
 
     .hero__text {
         font-size: 16px;
+    }
+
+    .hero__form,
+    .subscribe__form {
+        flex-direction: column;
+    }
+
+    .hero__form,
+    .subscribe__form {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero__form input,
+    .subscribe__form input {
+        width: 100%;
+        padding: 12px 15px;
+        font-size: 18px;
+    }
+
+    .hero__form input::placeholder,
+    .subscribe__form input::placeholder {
+        font-size: 16px;
+    }
+
+    .hero__form button,
+    .subscribe__form button {
+        padding: 12px 15px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .categories__content {
+        padding: 40px 0;
+    }
+
+    .categories__title {
+        margin-bottom: 30px;
+    }
+
+    .categories__list {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .category {
+        width: 200px;
+        height: 100px;
+        padding: 5px;
+    }
+
+    .category-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 5px;
+    }
+
+    .articles-list {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    article:nth-child(even) {
+        display: none;
+    }
+
+    .article-title {
+        font-size: 22px;
+    }
+
+    .subscribe__content {
+        padding: 40px 0;
+    }
+
+    .subscribe__picture {
+        width: 100px;
+        margin-bottom: 20px;
+    }
+
+    .subscribe__title {
+        font-weight: 600;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .subscribe__text {
+        margin-bottom: 20px;
+        font-size: 16px;
+
+    }
+
+    .footer__content {
+        padding: 40px 0;
+    }
+
+    .footer__menu-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__menu-box > div > p {
+        margin-bottom: 15px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .footer__menu-box > div > ul {
+        gap: 10px;
+    }
+
+    .footer__sign {
+        text-align: center;
     }
 }
