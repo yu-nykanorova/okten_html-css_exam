@@ -1,6 +1,49 @@
-@media screen and (min-width: 769px) and (max-width: 1279px) {
+@media screen and (max-width: 1279px) {
     .container {
         padding: 0 65px;
+    }
+
+    .header__menu {
+        gap: 40px;
+    }
+
+    nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 100vh;
+        padding: 5% 0;
+        background-color: rgba(0, 0, 0, 0.75);
+        transform: translateX(-100%);
+        transition: all 0.2s ease-in-out;
+        z-index: 2;
+    }
+
+    nav span {
+        position: absolute;
+        top: 22px;
+        left: calc(50% - 15px);
+    }
+
+    nav.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(0);
+    }
+
+    .header__menu ul {
+        flex-direction: column;
+    }
+
+    .header__menu a {
+        color: #fffffe;
+    }
+
+    .header__burger {
+        display: flex;
     }
 
     .hero__content {

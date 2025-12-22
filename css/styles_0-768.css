@@ -1,0 +1,54 @@
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-weight: 500;
+        font-size: 26px;
+    }
+
+    .logo span {
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .header__menu {
+        gap: 20px;
+    }
+
+    .header__burger {
+        width: 20px;
+        height: 20px;
+    }
+
+    .header__burger span,
+    .header__burger::before,
+    .header__burger::after {
+        height: 2px;
+    }
+
+    .header__search span,
+    .header__buycoffee-btn span {
+        display: none;
+    }
+
+    .hero__content {
+        padding: 130px 0 60px 0;
+    }
+
+    .hero__info {
+        max-width: 100%;
+        gap: 20px;
+    }
+
+    .hero__title {
+        max-width: 100%;
+        font-weight: 500;
+        font-size: 40px;
+    }
+
+    .hero__text {
+        font-size: 16px;
+    }
+}

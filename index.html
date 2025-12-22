@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/styles_769-1279.css">
+    <link rel="stylesheet" href="css/styles_0-768.css">
 </head>
 <body>
 <header>
@@ -22,13 +23,17 @@
         <div class="header__content">
             <a href="#" class="logo header__logo">Dasteen<span>.Blog</span></a>
             <div class="header__menu">
-                <nav>
+                <nav id="nav">
                     <ul>
                         <li><a href="#" class="title-20">Home</a></li>
                         <li><a href="/categories" class="title-20" target="_blank">Category</a></li>
                         <li><a href="/about" class="title-20" target="_blank">About Me</a></li>
                     </ul>
+                    <span id="close-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="40" height="40" fill="#fffffe"><path d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z"/></svg></span>
                 </nav>
+                <div id="burger" class="header__burger">
+                    <span></span>
+                </div>
                 <button class="header__search" type="button">
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.66667 11.3333C6.92394 11.3331 8.14499 10.9122 9.13537 10.1377L12.2492 13.2515L13.2508 12.2499L10.137 9.13608C10.9119 8.1456 11.333 6.92427 11.3333 5.66667C11.3333 2.54221 8.79112 0 5.66667 0C2.54221 0 0 2.54221 0 5.66667C0 8.79112 2.54221 11.3333 5.66667 11.3333ZM5.66667 1.41667C8.01054 1.41667 9.91667 3.32279 9.91667 5.66667C9.91667 8.01054 8.01054 9.91667 5.66667 9.91667C3.32279 9.91667 1.41667 8.01054 1.41667 5.66667C1.41667 3.32279 3.32279 1.41667 5.66667 1.41667Z" fill="#2B2C34" />
@@ -537,5 +542,6 @@
         <div class="footer__sign">© 2025 Digitaldastin</div>
     </div>
 </footer>
+<script src="js/script.js"></script>
 </body>
 </html>
